@@ -7,7 +7,10 @@ void main() {
       title: Text("yo mama"),
       backgroundColor: Colors.red[900],
     ),
-    backgroundColor: Colors.amber,
-    body: Center(child: Text("to to ot o o")),
+    backgroundColor: Colors.black,
+    body: Center(
+        child: Image(
+      image: AssetImage('images/prof.jpeg'),
+    )),
   )));
 }
