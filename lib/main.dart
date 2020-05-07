@@ -16,6 +16,7 @@ class ma extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SafeArea(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
               radius: 50, backgroundImage: AssetImage('images/prof.jpeg')),
@@ -36,51 +37,49 @@ class ma extends StatelessWidget {
           ),
           SizedBox(
             height: 30,
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 85),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  Icons.phone,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "9480975179",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontFamily: 'SourceSans',
-                      letterSpacing: 2.5,
-                      fontSize: 20),
-                )
-              ],
+            width: 120,
+            child: Divider(
+              color: Colors.orange,
             ),
           ),
-          SizedBox(
-            height: 20,
-          ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 25),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  Icons.email,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "sumanthhegde1029@gmail.com",
-                  style: TextStyle(
-                      fontSize: 18, fontFamily: 'NotoSans', color: Colors.grey),
-                )
-              ],
+//            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 85),
+              child: Card(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            color: Colors.grey[850],
+            child: ListTile(
+              leading: Icon(
+                Icons.phone,
+                color: Colors.white,
+              ),
+              title: Text(
+                "9480975179",
+                style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontFamily: 'NotoSans'),
+              ),
             ),
-          )
+          )),
+//          SizedBox(
+//            height: 10,
+//          ),
+          Container(
+//              margin: EdgeInsets.symmetric(horizontal: 25),
+              child: Card(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            color: Colors.grey[850],
+            child: ListTile(
+              leading: Icon(
+                Icons.email,
+                color: Colors.white,
+              ),
+              title: Text(
+                "sumanthheg29@gmail.com",
+                style: TextStyle(color: Colors.white, fontFamily: 'NotoSans'),
+              ),
+            ),
+          ))
         ],
       )),
     ));
